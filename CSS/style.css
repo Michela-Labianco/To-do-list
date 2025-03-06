@@ -97,7 +97,7 @@ body{
     height: 100%;
 }
 .task-remove{
-    background-image: url(/Users/michela/Desktop/Web_dev/jQuery/Project-To-Do-List/trash.svg);
+    background-image: url(/trash.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
