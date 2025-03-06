@@ -1,0 +1,112 @@
+body{
+    background-color: #ffffe5;
+}
+
+#to-do{
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 30px;
+    border: 1px solid #cfd8dc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.to-do-header{
+    background-color: #3f94d6;
+    color: #fff;
+    height: 80px;
+    border-radius: 30px 30px 0 0 ;
+}
+.to-do-header h2{
+    margin: 0;
+    text-align: center;
+    line-height: 80px; /*to the center vertically we set its line height equal to its parent element --> to-do-header*/
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tasks{
+    margin: 0;
+    padding: 0;   
+}
+
+.task{
+    list-style: none;
+    border: 1px solid #cfd8dc;
+    height: 50px;
+}
+.task:last-child{
+    border-radius: 0 0 30px 30px;
+}
+.task:last-child .col-1{
+    border-radius: 0 0 0 30px;
+}
+.task:last-child .col-3{
+    border-radius: 0 0 30px 0;
+}
+
+.add-block{
+    height: 50px;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.add-field{
+    width: 80%;
+    height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: left;
+    border: 0;
+    outline: none; /*so we don't get the blue outline when we click on the input field*/
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.add-button{
+    border: 0;
+    padding: 0;
+    color: #3f94d6;
+    font-size: 40px;
+    font-weight: bold;
+    outline: none;
+}
+
+.col-1{
+    width: 10%;
+    float: left; /*for all our columns to be in the same row (row representing one list item)*/
+    background-color: #bbdefb;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-2{
+    width: 70%;
+    float: left;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /*so the paddings are not added to the total width of this part*/
+}
+.col-3{
+    width: 20%;
+    float: left;
+    background-color: #bbdefb;
+    height: 100%;
+}
+.task-remove{
+    background-image: url(/Users/michela/Desktop/Web_dev/jQuery/Project-To-Do-List/trash.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.col-3:hover{
+    background-color: #90caf9;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+}
+

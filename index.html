@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" type="text/css" href="/Users/michela/Desktop/Web_dev/jQuery/Project-To-Do-List/CSS/style.css">
+</head>
+<body>
+    <div id="to-do">
+        <div class="to-do-header">
+            <h2>To-do list</h2>
+        </div>
+        <div class="to-do-body">
+            <div class="add-block">
+                <input type="text" class="add-field" placeholder="A task you want to complete">
+                <button class="add-button col-3">+</button>
+            </div>
+            <ul class="tasks" id="sortable">
+                <li class="task">
+                    <div class="task-checked col-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-text col-2">Task 1</div>
+                    <div class="task-remove col-3"></div>
+                </li>
+                <li class="task">
+                    <div class="task-checked col-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-text col-2">Task 2</div>
+                    <div class="task-remove col-3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--connected through CDN, so we just copy the script right after we connected to jQuery-->
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="/Users/michela/Desktop/Web_dev/jQuery/Project-To-Do-List/jQuery/script.js"></script>
+</body>
+</html>
